@@ -787,3 +787,8 @@ class AndersonFRM(FirstReactionMethod):
                   zip(self.T, self.transitions)]
         self.P[mu] -= log(self.rng.random())
         super(AndersonNRM, self).perform_transition(time, transition)
+
+
+class MichaelisMentenKinetics(StochasticSimulationAlgorithm):
+    def test(self):
+        return 0
